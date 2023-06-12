@@ -15,15 +15,20 @@ function App() {
   };
   return (
     <div className="App">
-      <form onSubmit={handleSubmit} className="form">
-        <input
-          type="text"
-          placeholder="City"
-          onChange={(e) => {
-            setCity(e.target.value);
-          }}
-        />
-        <button type="submit">Search</button>
+      <h1 className="h1">We are here to tell the weather of the world</h1>
+      <hr />
+      <form onSubmit={handleSubmit}>
+        <div className="form">
+          <input
+            type="text"
+            placeholder="City/Country"
+            className="input"
+            onChange={(e) => {
+              setCity(e.target.value);
+            }}
+          />
+          <button type="submit">Search</button>
+        </div>
         {weatherData && (
           <>
             <h1 className="display">This is {weatherData.location.country}</h1>

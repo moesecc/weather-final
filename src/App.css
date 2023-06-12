@@ -1,3 +1,14 @@
+:root{
+    --bg-color: #117582;
+    --font-color: #D4F1F4;
+}
+
+
+* {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
 .current {
     display: block;
     justify-content: center;
@@ -14,13 +25,65 @@
 .form {
     padding: 3rem;
     justify-content: center;
-    display: block;
+    display: flex;
+    height: 4rem;
+
 }
+
+.h1 {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #8dd9f9;
+    outline: none;
+    
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  ::placeholder {
+    color: var(--font-color);
+  }
+
+  button {
+    margin: 12px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background: #0977a5;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #D4F1F4, 5px 5px 15px #75E6DA inset 5px 5px 10px #189AB4, inset -5px -5px 10px #05445E;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-size: 16px;
+    color: #8dd9f9;
+    transition: 500ms;
+  }
+  
+  button:hover {
+    box-shadow: -5px -5px 15px #75E6DA, 5px 5px 15px #D4F1F4, inset 5px 5px 10px #189AB4, inset -5px -5px 10px #05445E;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
 
 .set {
     border-radius: 10px;
     display: block;
     text-align: center;
+    margin: 2rem 5rem 2rem 5rem;
     align-content: center;
 }
 
