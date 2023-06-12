@@ -17,14 +17,8 @@ function App() {
     <div className="App">
       <header>
         <nav className="navbar">
-          <li>
-            <a href="#" />
-            Home
-          </li>
-          <li>
-            <a href="#" />
-            Portfolio
-          </li>
+          <li>Home</li>
+          <li>Portfolio</li>
         </nav>
       </header>
       <hr />
