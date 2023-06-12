@@ -15,7 +15,20 @@ function App() {
   };
   return (
     <div className="App">
-      <h1 className="h1">We are here to tell the weather of the world</h1>
+      <header>
+        <nav className="navbar">
+          <li>
+            <a href="#" />
+            Home
+          </li>
+          <li>
+            <a href="#" />
+            Portfolio
+          </li>
+        </nav>
+      </header>
+      <hr />
+      <h1 className="h1">Find the weather anywhere in the world.</h1>
       <hr />
       <form onSubmit={handleSubmit}>
         <div className="form">
@@ -31,16 +44,30 @@ function App() {
         </div>
         {weatherData && (
           <>
-            <h1 className="display">This is {weatherData.location.country}</h1>
+            <h1 className="display">
+              This is {weatherData.location.region}{" "}
+              {weatherData.location.country}
+            </h1>
             <fieldset className="set">
-              <h2>Temperature: {weatherData.current.temp_c} C</h2>
-              <h2>Feels Like: {weatherData.current.feelslike_c} C</h2>
+              <label>Current Weather Details</label>
+              <h2>
+                Temperature: {weatherData.current.temp_c} C /{" "}
+                {weatherData.current.temp_f} F
+              </h2>
+              <h2>
+                Feels Like: {weatherData.current.feelslike_c} C /{" "}
+                {weatherData.current.feelslike_f} F
+              </h2>
+              <h2>
+                Wind Speed {weatherData.current.wind_mph} mph /{" "}
+                {weatherData.current.wind_kph} kph
+              </h2>
             </fieldset>
+
             <div className="current">
-              <h1>Current Weather Details</h1>
               <p className="p">
                 <img alt="condition" src={weatherData.current.condition.icon} />
-                <p>{weatherData.current.condition.text}</p>
+                <p>it's {weatherData.current.condition.text} outside</p>
               </p>
             </div>
           </>
