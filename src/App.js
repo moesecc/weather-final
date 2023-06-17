@@ -40,7 +40,7 @@ function App() {
         {weatherData && (
           <>
             <h1 className="display">
-              This is {weatherData.location.region}{" "}
+              This is {weatherData.location.name},{" "}
               {weatherData.location.country}
             </h1>
             <fieldset className="set">
