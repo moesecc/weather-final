@@ -38,9 +38,9 @@ function App() {
         </div>
         <hr />
         {weatherData && (
-          <>
+          <div className="data">
             <h1 className="display">
-              This is {weatherData.location.name},{" "}
+              This is {weatherData.location.name} ,{" "}
               {weatherData.location.country}
             </h1>
             <fieldset className="set">
@@ -69,7 +69,7 @@ function App() {
                 </p>
               </div>
             </fieldset>
-          </>
+          </div>
         )}
       </form>
     </div>
