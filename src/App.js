@@ -57,7 +57,7 @@ function App() {
                 Wind Speed {weatherData.current.wind_mph} mph /{" "}
                 {weatherData.current.wind_kph} kph
               </h2>
-              <h2></h2>
+
               <div className="current">
                 <p className="p">
                   <p>it's {weatherData.current.condition.text} outside</p>
