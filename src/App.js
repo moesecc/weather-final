@@ -36,6 +36,7 @@ function App() {
           />
           <button type="submit">Search</button>
         </div>
+        <hr />
         {weatherData && (
           <>
             <h1 className="display">
@@ -56,14 +57,18 @@ function App() {
                 Wind Speed {weatherData.current.wind_mph} mph /{" "}
                 {weatherData.current.wind_kph} kph
               </h2>
+              <h2></h2>
+              <div className="current">
+                <p className="p">
+                  <p>it's {weatherData.current.condition.text} outside</p>
+                  <hr />
+                  <img
+                    alt="condition"
+                    src={weatherData.current.condition.icon}
+                  />
+                </p>
+              </div>
             </fieldset>
-
-            <div className="current">
-              <p className="p">
-                <img alt="condition" src={weatherData.current.condition.icon} />
-                <p>it's {weatherData.current.condition.text} outside</p>
-              </p>
-            </div>
           </>
         )}
       </form>

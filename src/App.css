@@ -90,17 +90,23 @@ h2 {
   }
 
 
-.set {
+fieldset {
     border-radius: 10px;
     display: block;
     text-align: center;
-    margin: 2rem 5rem 2rem 5rem;
-    align-content: center;
+    padding: 5rem 5rem 5rem 5rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-bottom: 2rem;
+    
 }
 
-.p {
+.current {
     display: flex;
-    justify-content: space-evenly;
+    padding: 1rem 5rem 1rem 5rem;
+
+    
+
 }
 
 
@@ -112,4 +118,9 @@ h2 {
 
 .navbar li {
     list-style: none;
+}
+
+
+h2 {
+    font-style: italic;
 }
