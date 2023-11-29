@@ -11,19 +11,13 @@ function App() {
       `https://api.weatherapi.com/v1/current.json?key=7b96e15176bf400498a181557230406&q=${city}`
     );
     setWeatherData(data);
-    console.log(data);
   };
   return (
     <div className="App">
-      <header>
-        <nav className="navbar">
-          <li>Home</li>
-          <li>Portfolio</li>
-        </nav>
+      <header className="header">
+        <h1 className="h1">Find the weather anywhere in the world.</h1>
       </header>
-      <hr />
-      <h1 className="h1">Find the weather anywhere in the world.</h1>
-      <hr />
+
       <form onSubmit={handleSubmit}>
         <div className="form">
           <input

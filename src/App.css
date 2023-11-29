@@ -1,129 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mulish:wght@200&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mulish:wght@200&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dancing+Script&display=swap");
 
-:root{
-    --bg-color: #117582;
-    --font-color: #D4F1F4;
+:root {
+  --bg-color: #052b30;
+  --font-color: #d4f1f4;
 }
-
 
 * {
-    background-color: var(--bg-color);
-    color: var(--font-color);
-    
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
-
-
 .current {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }
 
 .display {
-    font-size: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Dancing Script', cursive;
-    
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Dancing Script", cursive;
 }
 
 .form {
-    padding: 3rem;
-    justify-content: center;
-    display: flex;
-    height: 4rem;
-
+  justify-content: center;
+  display: flex;
+  margin: 40px;
 }
 
-.h1 {
-    display: block;
-    text-align: center;
-    padding: 2rem;
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 h2 {
-    font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 .input {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #8dd9f9;
-    outline: none;
-    
-  }
-  
-  .input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-
-  ::placeholder {
-    color: var(--font-color);
-  }
-
-  button {
-    margin: 12px;
-    height: 50px;
-    width: 120px;
-    border-radius: 10px;
-    background: #0977a5;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -5px -5px 15px #D4F1F4, 5px 5px 15px #75E6DA inset 5px 5px 10px #189AB4, inset -5px -5px 10px #05445E;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    font-size: 16px;
-    color: #8dd9f9;
-    transition: 499ms;
-  }
-  
-  button:hover {
-    box-shadow: -5px -5px 15px #75E6DA, 5px 5px 15px #D4F1F4, inset 5px 5px 10px #189AB4, inset -5px -5px 10px #05445E;
-    color: #d6d6d6;
-    transition: 500ms;
-  }
-
-
-
-fieldset {
-    border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #8dd9f9;
+  outline: none;
 }
 
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+::placeholder {
+  color: var(--font-color);
+}
+
+button {
+  margin: 12px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background: #0977a5;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 15px #d4f1f4,
+    5px 5px 15px #75e6da inset 5px 5px 10px #189ab4,
+    inset -5px -5px 10px #05445e;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--bg-color);
+  transition: 499ms;
+}
+
+button:hover {
+  box-shadow: -5px -5px 15px #75e6da, 5px 5px 15px #d4f1f4,
+    inset 5px 5px 10px #189ab4, inset -5px -5px 10px #05445e;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+fieldset {
+  border-radius: 10px;
+}
 
 .data {
-    
-    display: block;
-    text-align: center;
-    max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 .current {
-    display: flex;
-    padding: 1rem 5rem 1rem 5rem;
-
-    
-
+  display: flex;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .navbar li {
-    list-style: none;
+  list-style: none;
 }
 
-
 h2 {
-    font-style: italic;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .display {
+    justify-content: center;
+    padding: 1rem;
+  }
 }
