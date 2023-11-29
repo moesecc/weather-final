@@ -48,7 +48,7 @@ function App() {
                 {weatherData.current.feelslike_f} F
               </h2>
               <h2>
-                Wind Speed {weatherData.current.wind_mph} mph /{" "}
+                Wind Speed: {weatherData.current.wind_mph} mph /{" "}
                 {weatherData.current.wind_kph} kph
               </h2>
 
