@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import axios from "axios";
-
 function App() {
   const [city, setCity] = useState("Beirut");
   const [weatherData, setWeatherData] = useState(null);
@@ -30,7 +29,7 @@ function App() {
           />
           <button type="submit">Search</button>
         </div>
-        <hr />
+
         {weatherData && (
           <div className="data">
             <h1 className="display">
@@ -54,7 +53,7 @@ function App() {
 
               <div className="current">
                 <p className="p">
-                  <p>it's {weatherData.current.condition.text} outside</p>
+                  <p>{weatherData.current.condition.text} outside</p>
                   <hr />
                   <img
                     alt="condition"

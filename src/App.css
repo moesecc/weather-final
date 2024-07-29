@@ -3,12 +3,16 @@
 
 :root {
   --bg-color: #052b30;
-  --font-color: #d4f1f4;
+  --font-color: #07272a;
 }
 
 * {
-  background-color: var(--bg-color);
   color: var(--font-color);
+  background-image: url("https://i.pinimg.com/564x/2d/7f/9e/2d7f9ef7bcf38640682cf5d06a221d2b.jpg");
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Make sure the background stays fixed during scrolling */
+  background-position: center; /* Center the background image */
 }
 
 .current {
@@ -20,16 +24,18 @@
 
 .display {
   font-size: 40px;
+  font-weight: bolder;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
-  font-family: "Dancing Script", cursive;
+  font-family: "Poppins";
 }
 
 .form {
-  justify-content: center;
   display: flex;
-  margin: 40px;
+  align-items: center; /* Vertically aligns items */
+  gap: 10px;
+  justify-content: center;
 }
 
 .header {
@@ -37,6 +43,7 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
+  font-size: x-large;
 }
 
 h2 {
@@ -44,58 +51,62 @@ h2 {
 }
 
 .input {
-  padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #3d85c6; /* Border color matching the button */
   border-radius: 5px;
-  font-size: 16px;
-  color: #8dd9f9;
+  font-size: 16px; /* Matching the button's font size */
+  color: #272727; /* White text color for contrast */
+  background-color: #2f4f4f; /* Dark slate gray background */
   outline: none;
+  height: 40px; /* Matching the button's height */
+  padding: 0 10px; /* Adjusted padding for vertical centering */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle outer shadow for depth */
 }
 
 .input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #5dade2; /* Slightly lighter blue border on focus */
+  box-shadow: 0 0 5px rgba(13, 30, 42, 0.4); /* Soft blue glow on focus */
 }
 
 ::placeholder {
-  color: var(--font-color);
+  color: #111924; /* Light steel blue for placeholder text */
 }
 
 button {
   margin: 12px;
-  height: 50px;
-  width: 120px;
+  height: 40px;
+  width: 100px;
   border-radius: 10px;
-  background: #0977a5;
+  background: #3d85c6; /* A more visible elegant blue background */
   justify-content: center;
   align-items: center;
-  box-shadow: -5px -5px 15px #d4f1f4,
-    5px 5px 15px #75e6da inset 5px 5px 10px #189ab4,
-    inset -5px -5px 10px #05445e;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+    /* Subtle outer shadow */ inset 2px 2px 5px rgba(255, 255, 255, 0.1); /* Soft inner glow */
   font-family: "Poppins", sans-serif;
   border: none;
-  font-size: 16px;
-  font-weight: 900;
-  color: var(--bg-color);
-  transition: 499ms;
+  font-size: 16px; /* Slightly smaller font size */
+  font-weight: 700; /* Slightly less bold */
+  color: #ffffff; /* White text for contrast */
+  transition: box-shadow 300ms ease, transform 300ms ease; /* Smooth hover transition */
 }
 
 button:hover {
-  box-shadow: -5px -5px 15px #75e6da, 5px 5px 15px #d4f1f4,
-    inset 5px 5px 10px #189ab4, inset -5px -5px 10px #05445e;
-  color: #d6d6d6;
-  transition: 500ms;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3),
+    /* Darker shadow on hover */ inset 2px 2px 5px rgba(126, 126, 126, 0.15); /* Slightly stronger inner glow */
+  transform: translateY(-2px); /* Subtle lift effect */
 }
 
 fieldset {
   border-radius: 10px;
+  max-width: fit-content;
 }
 
 .data {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 40px;
+  padding: 2rem;
   text-align: center;
   max-width: 100%;
   padding: 1rem;
@@ -103,7 +114,8 @@ fieldset {
 
 .current {
   display: flex;
-  padding: 1rem 5rem 1rem 5rem;
+  font-size: x-large;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 .navbar {
